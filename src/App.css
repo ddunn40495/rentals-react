@@ -1,18 +1,22 @@
 /* CSS Phone */
-
+.main-body {
+  font-family: "Righteous", cursive;
+}
 .nav-row {
-  background-color: red;
+  background-color: #ecb390;
   height: 20vh;
 }
 
 .main-body-phone-row {
-  background-color: orange;
+  background-color: #df7861;
   height: 80vh;
 }
 
 .phone-card {
   height: 28vh;
   flex-direction: row;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem;
 }
 
 .phone-card-pic {
@@ -27,7 +31,7 @@
 }
 
 .phone-card-info {
-  background-color: gray;
+  background-color: #d4e2d4;
   order: 2;
   flex-grow: 1;
   flex-shrink: 0;

@@ -39,11 +39,11 @@ function Home() {
   }, []);
   return (
     <Fragment>
-      <Container>
+      <Container className='main-body'>
         <Row className='nav-row'>
           <Col className='nav-col' xs={12}>
             <Navbar className='first-nav' bg='light'>
-              <Navbar.Brand href='/'>Rentals</Navbar.Brand>
+              <Navbar.Brand href='/'>RENTALS</Navbar.Brand>
             </Navbar>
             <Navbar className='second-nav' bg='light'>
               yep
@@ -83,9 +83,10 @@ function Home() {
                     }}
                   ></div>
                   <div className='phone-card-info'>
-                    <h3 className='phone-rent'>{listing.rent}</h3>
+                    <h3 className='phone-rent'>${listing.rent}/mo</h3>
                     <h3 className='phone-city'>{listing.city}</h3>
                     <h3 className='phone-type'>{listing.category}</h3>
+                    <Button variant='danger'>More Info</Button>
                   </div>
                 </Card>
               );
